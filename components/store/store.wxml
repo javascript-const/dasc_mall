@@ -1,0 +1,18 @@
+<!--components/store/store.wxml-->
+<!--components/publiclunbo/publiclunbo.wxml-->
+<view class="scroll-wrap">
+  <scroll-view class="scroll-list" scroll-x="true">
+    <view class="scroll-content" style="width:{{store.goodListlength*112}}px">
+      <view class="scroll-item" wx:for="{{store.StoreGoodslist}}" wx:key="index">
+        <view class="item-img">
+          <image src="{{item.street_thumb}}"></image>
+        </view>
+        <view class="goods-icon">
+          <image src="{{item.logo_thumb}}"></image>
+        </view>
+        <view class="item-title">{{item.rz_shopName}}</view>
+        <view>共计{{item.total}}个商品</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

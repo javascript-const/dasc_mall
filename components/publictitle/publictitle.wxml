@@ -1,0 +1,4 @@
+<!--components/publictitle/publictitle.wxml-->
+<view class="public-title">
+<view class="title">{{params.title}}</view>
+</view>

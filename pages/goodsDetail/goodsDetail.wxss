@@ -1,0 +1,281 @@
+.swiper-wrap{
+  width: 100%;
+  height: 375px;
+}
+.swiper-wrap image{
+  width: 100%;
+  height: 375px;
+}
+.goods-price{
+  width: 95%;
+  height: 50px;
+  margin: auto;
+  margin-top: 10px;
+}
+.shop-price{
+  font-size: 20px;
+  color: red;
+}
+.old-price{
+  font-size: 14px;
+  color: rgb(153, 153, 153);
+  margin-left: 8px;
+  text-decoration: line-through;
+}
+.goods-store{
+  width: 95%;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background: #f7f8fc;
+  font-size: 14px;
+  margin: auto;
+}
+.goods-icon{
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  float: left;
+  margin-top: 4px;
+}
+.goods-icon image{
+  width: 20px;
+  height: 20px;
+}
+.store-icon{
+  width: 100px;
+  height: 23px;
+  margin-left: 50px;
+  border-radius: 15px;
+  color: #e3c49e;
+  font-size: 12px;
+  background: #000;
+}
+.shop-title{
+  width: 95%;
+  height: auto;
+  line-height: 25px;
+  overflow: hidden;
+  margin: auto;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.shop-count{
+  width: 95%;
+  height: 20px;
+  margin: auto;
+  margin-top: 10px;
+}
+.shop-count{
+  font-size: 14px;
+  color: #999;
+}
+.big-wrap view{
+  background-color: white;
+}
+.select{
+  width: 95%;
+  height: 40px;
+  margin: auto;
+  background: red;
+  line-height: 40px;
+}
+
+.mask{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(0,0,0,0.8) !important;
+ 
+}
+.screen-wrap{
+  width: 100%;
+  height:500rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+.close{
+  height: 60rpx;
+  text-align: right;
+  margin-right: 20rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.screen-content{
+  width: 100%;
+  padding-top: 1rpx;
+}
+.screen-goods{
+  width: 100%;
+  position: relative;
+}
+.goods-img{
+  width: 180rpx;
+  height: 180rpx;
+  border:2rpx solid #ccc;
+  position: absolute;
+  top: -100rpx;
+  left: 60rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  overflow: hidden;
+  box-shadow: 5px 5px 3px #efefef,-5px -5px 3px #efefef;
+}
+.goods-img image{
+  width: 180rpx;
+  height: 180rpx;
+}
+.goods-title{
+  left: 300rpx;
+  position: absolute;
+  top: 30rpx;
+  width: 55%;
+  /* background-color: pink; */
+}
+.goods-title .title{
+  height: 80rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.goods-title .price{
+  font-size: 36rpx;
+  color: #f55;
+  margin-top: 20rpx;
+
+}
+.goods-title .price::before{
+  content: "￥";
+}
+
+.buy-warp{
+  margin-top: 240rpx;
+  display: flex;
+  justify-content: space-between;
+  height: 100rpx;
+  background-color: pink;
+  align-items: center;
+}
+.buy-num{
+  margin-left: 20rpx;
+}
+.buy-add{
+  margin-right: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  align-items: center;
+}
+.screen-content .buy{
+  position: absolute;
+  bottom: 0;
+  height: 100rpx;
+  background-color: pink;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 100rpx;
+}
+.screen-content view{
+  flex: 1;
+}
+.buy-btn{
+  background-color:#fba534 !important;
+  color: #fff;
+  height: 100rpx;
+}
+.buy-cart{
+  background-color: #f55 !important;
+  color: #fff;
+  height: 100rpx;
+}
+.guess{
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+}
+.num{
+  width: 80px;
+  height: 20px;
+  text-align: center;
+}
+.wenben{
+  width: 25px;
+  height: 20px;
+}
+
+
+.footer-container{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  border-top: 1px solid #efefef;
+}
+.footer-item{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 24rpx;
+  position: relative;
+
+}
+.footer-item .kf{
+  height: 100rpx;
+  width: 100%;
+  position: absolute;
+  z-index: 99;
+  opacity: 0;
+}
+.footer-item .buyNun{
+  min-width: 30rpx;
+  padding: 5rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  background-color: #f44;
+  color: #fff;
+  text-align: center;
+  line-height: 30rpx;
+  font-size: 24rpx;
+  position: absolute;
+  right: 5rpx;
+  top: 5rpx;
+}
+.footer-item .iconfont{
+  font-size: 40rpx;
+}
+
+.footer-item.addcart{
+  flex: 2;
+  font-size: 28rpx;
+  background:#f44 ;
+  color: #fff;
+}
+.footer-item.buy{
+  flex: 2;
+  font-size: 28rpx;
+  background:#ff976a ;
+  color: #fff;
+}

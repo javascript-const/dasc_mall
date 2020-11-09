@@ -1,0 +1,11 @@
+.public-title{
+  width: 100%;
+  height: 128rpx;
+  background: #efefef;
+  position: relative;
+}
+.title{
+  position: absolute;
+  bottom:20rpx;
+  left:20rpx;
+}

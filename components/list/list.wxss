@@ -1,0 +1,43 @@
+/* components/list/list.wxss */
+.list-container{
+  width: 100%;
+  display: flex;
+}
+.list-wrap{
+  width: 100%;
+  display: flex;
+  margin: 20rpx;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  justify-content: space-around ;
+  
+  text-align: center;
+}
+.list-item{
+  width: 48%;
+  margin-bottom: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: white;
+}
+.list-item .img{
+  width: 100%;
+  height: 344rpx;
+}
+.title{
+  width: 100%;
+  font-size: 24rpx;
+  line-height: 36rpx;
+  text-align: left;
+  height: 72rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.price{
+  color: red;
+  font-size: 18px;
+}

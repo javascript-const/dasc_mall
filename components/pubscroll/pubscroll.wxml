@@ -1,0 +1,20 @@
+<!--components/pubscroll/pubscroll.wxml-->
+<view class="scroll-wrap">
+  <view class="container">
+    <view class="team-title">
+      拼团专区 拼着买更实惠
+    </view>
+    <scroll-view class="scroll-list" scroll-x="true" >
+      <view class="scroll-content" style="width:{{public.length*125}}px">
+        <view class="scroll-item" wx:for="{{public.teambuy}}" wx:key="index">
+          <view class="item-img">
+            <image src="{{item.goods_thumb}}"></image>
+          </view>
+          <view class="item-title">{{item.goods_name}}</view>
+          <view>{{item.team_price}}</view>
+          <view>{{item.shop_price}}</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+<!--components/list/list.wxml-->
+<view class="list-container">
+  <view class="list-wrap">
+    <view class="list-item" wx:for="{{listDatas}}"wx:key="index">
+    <navigator url="/pages/goodsDetail/goodsDetail?goods_id={{item.goods_id}}">
+
+      <image class="img" src="{{item.goods_thumb}}"></image>
+      <view class="title">{{item.title||item.goods_name}}</view>
+      <view class="price">${{item.shop_price}}</view>
+    </navigator>
+    </view>
+  
+  </view>
+
+</view>

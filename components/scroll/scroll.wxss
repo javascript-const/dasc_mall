@@ -1,0 +1,47 @@
+
+.miaosha-time{
+  width: 100%;
+  height: 58px;
+}
+.miaosha-item{
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  padding-top: 10px;
+  float: left;
+}
+.scroll-wrap {
+  width: 100%;
+  height: 210px;
+}
+
+.scroll-list {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.scroll-item {
+  width: 104px;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.scroll-item image {
+  width: 102px;
+  height: 120px;
+}
+
+.scroll-content {
+  height: 100%;
+}
+
+.item-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}

@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "publictitle":"/components/publictitle/publictitle",
+    "list":"/components/list/list",
+    "scroll":"/components/scroll/scroll",
+    "pubscroll":"/components/pubscroll/pubscroll",
+    "publiclunbo":"/components/publiclunbo/publiclunbo",
+    "bigscroll":"/components/bigscroll/bigscroll",
+    "store":"/components/store/store"
+  }
+}

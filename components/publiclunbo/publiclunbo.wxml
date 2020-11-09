@@ -1,0 +1,14 @@
+<!--components/publiclunbo/publiclunbo.wxml-->
+<view class="scroll-wrap">
+  <scroll-view class="scroll-list" scroll-x="true">
+   <view class="scroll-content" style="width:{{publicItem.length1*112}}px">
+    <view class="scroll-item" wx:for="{{publicItem.public1}}" wx:key="index">
+      <view class="item-img">
+        <image src="{{item.goods_thumb}}"></image>
+      </view>
+      <view class="item-title">{{item.title}}</view>
+      <view>{{item.shop_price}}</view>
+    </view>
+   </view>
+  </scroll-view>
+</view>

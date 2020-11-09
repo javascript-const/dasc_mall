@@ -1,0 +1,274 @@
+.nav {
+  width: 100%;
+  height: 300rpx;
+  background: #f34646;
+  border-bottom-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+  overflow: hidden;
+}
+
+.all {
+  background: #ccc;
+}
+
+.input-content {
+  width: 100%;
+  height: 100rpx;
+  overflow: hidden;
+}
+
+.search-icon {
+  position: absolute;
+  top: 30rpx;
+  left: 80%;
+}
+
+.input-content input {
+  background-color: aliceblue;
+  width: 90%;
+  height: 60rpx;
+  border-radius: 40rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  text-indent: 5%;
+}
+
+.move-nav {
+  width: 85%;
+  height: 70rpx;
+  overflow: hidden;
+  display: flex;
+}
+
+.nav-list {
+  overflow: hidden;
+  width: 1280rpx;
+}
+
+.item {
+  float: left;
+  padding: 0px 20rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  flex-wrap: nowrap;
+  color: aliceblue;
+}
+
+.move-nav .active {
+  font-weight: bold;
+}
+
+.banner {
+  width: 100%;
+  height: 240rpx;
+  text-align: center;
+  margin-top: -55px;
+}
+
+.swiper {
+  width: 95%;
+  margin: auto;
+  height: 240rpx;
+  overflow: hidden;
+  border-radius: 20rpx;
+}
+
+swiper-item {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper image {
+  width: 100%;
+  height: 240rpx;
+  overflow: hidden;
+}
+
+.goods-list {
+  width: 95%;
+  height: 260px;
+  margin: auto;
+  margin-top: 10px;
+  background: white;
+  border-radius: 10px;
+}
+
+.goods-item {
+  width: 100%;
+  height: 211px;
+  border-bottom: 1px solid #ccc;
+}
+
+.item1 {
+  width: 100%;
+  height: 100%;
+}
+
+.goods {
+  width: 20%;
+  height: 90px;
+  text-align: center;
+  float: left;
+}
+
+.goods image {
+  width: 95%;
+  height: 65px;
+}
+
+.goods-title {
+  font-size: 14px;
+}
+
+.new-list {
+  width: 100%;
+  height: 50px;
+}
+
+.new-logo {
+  width: 25%;
+  height: 50px;
+  float: left;
+}
+
+.new-logo image {
+  width: 100%;
+  height: 50px;
+}
+
+.new-title {
+  width: 75%;
+  height: 50px;
+  float: left;
+}
+
+.new-item {
+  width: 75%;
+  height: 50px;
+  float: left;
+  padding-left: 20px;
+  line-height: 50px;
+}
+
+.photo {
+  width: 100%;
+  height: 174px;
+  margin: 20px 0px;
+}
+
+.photo-title {
+  width: 95%;
+  height: 100%;
+  margin: auto;
+}
+
+.photo-title image {
+  width: 100%;
+  height: 100%;
+}
+
+.time-wrap {
+  width: 100%;
+  height: 370px;
+}
+
+.time-content {
+  width: 95%;
+  height: 100%;
+  background: white;
+  border-radius: 10px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.miaosha {
+  width: 95%;
+  height: 35px;
+  padding: 12px 10px;
+}
+
+.time-logo {
+  width: 100px;
+  height: 35px;
+  float: left;
+}
+
+.time-logo image {
+  width: 100%;
+  height: 25px;
+}
+
+.timer {
+  width: 200px;
+  height: 25px;
+  float: right;
+}
+
+.timt-item {
+  width: 20px;
+  height: 20px;
+  background: red;
+  color: white;
+  margin-left: 10px;
+}
+
+.first {
+  width: 100%;
+  height: 305px;
+  margin-top: 10px;
+}
+
+
+.first-wrap {
+  width: 95%;
+  height: 100%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.first-img {
+  width: 100%;
+  height: 197px;
+  z-index: 10;
+}
+
+.first-img image {
+  width: 100%;
+  height: 197px;
+  border-radius: 10px;
+}
+
+.store-wrap {
+  width: 100%;
+  height: 360px;
+  margin-top: 10px;
+  overflow: hidden;
+  
+}
+
+.store-title {
+  width: 95%;
+  height: 100%;
+  margin: auto;
+  border-radius: 10px;
+  background: white;
+  overflow: hidden;
+}
+
+.store-head {
+  width: 100%;
+  height: 50px;
+  float: left;
+}
+.store-img{
+  width: 95%;
+  margin: auto;
+  height: 112px;
+  display: flex;
+  justify-content: space-between;
+}
+.store-img image{
+  width: 162px;
+  height: 100%;
+  float: left;
+}

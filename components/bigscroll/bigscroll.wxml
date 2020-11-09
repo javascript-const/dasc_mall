@@ -1,0 +1,21 @@
+<!--components/bigscroll/bigscroll.wxml-->
+<view class="big-wrap">
+  <view class="big-container" style="background-color:{{big.bgcolor}}">
+    <view class="big-img">
+      <image src="{{big.bigImg}}"></image>
+    </view>
+    <view class="third-list">
+      <view class="third-content">
+        <view class="third-item">
+          <view class="third-goods" wx:for="{{big.bigScrollDatas}}" wx:key="index">
+            <view class="third-img">
+              <image src="{{item.goods_thumb}}"></image>
+            </view>
+            <view class="third-title">{{item.title}}</view>
+            <view>{{item.shop_price}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

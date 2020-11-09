@@ -1,0 +1,63 @@
+{
+  "usingComponents": {
+    
+  },
+  "pages": [
+    "pages/mine/mine",
+    "pages/cart/cart",
+    "pages/category/category",
+    "pages/find/find",
+    "pages/goodsList/goodsList",
+    "pages/goodsDetail/goodsDetail",
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f00",
+    "navigationBarTitleText": "北冥有鱼",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#d81e06",
+    "backgroundColor": "#efefef",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home1.png",
+        "selectedIconPath": "images/home2.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "images/category1.png",
+        "selectedIconPath": "images/category2.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "images/find1.png",
+        "selectedIconPath": "images/find2.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "images/cart1.png",
+        "selectedIconPath": "images/cart2.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/mine1.png",
+        "selectedIconPath": "images/mine2.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

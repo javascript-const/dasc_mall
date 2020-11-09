@@ -1,0 +1,105 @@
+<!--pages/goodsDetail/goodsDetail.wxml-->
+<import src="../../wxParse/wxParse.wxml"></import>
+<view class="big-wrap" style="background-color: #f4f4f4; height:{{oH}}px">
+  <scroll-view scroll-y="true" bindscrolltolower="loadmore" style="height:{{oH}}px">
+    <swiper class="swiper-wrap" autoplay="true" interval="2000" circular="true" indicator-dots="true"
+      indicator-active-color="blue" indicator-color="white">
+      <swiper-item wx:for="{{goodsDetails}}" wx:key="index">
+        <image src="{{item.img_url}}"></image>
+      </swiper-item>
+    </swiper>
+    <view>
+      <view class="goods-price">
+        <text class="shop-price">￥{{goodsDetailsContent.shop_price}}</text>
+        <text class="old-price">￥{{goodsDetailsContent.marketPrice}}</text>
+      </view>
+    </view>
+    <view>
+      <view class="goods-store">
+        <view class="goods-icon">
+          <image src="/images/storeicon.png"></image>
+        </view>
+        <view style="float:left">
+          <text>高级VIP享超值优惠价</text>
+          <text style="font-weight: bold">￥{{goodsDetailsContent.shop_price}}</text>
+          <text class="store-icon">立即开通<text class="iconfont icon-more" style="font-size:14px"></text>
+          </text>
+        </view>
+      </view>
+    </view>
+    <view>
+      <view class="shop-title">{{goodsDetailsContent.goods_name}}</view>
+    </view>
+    <view>
+      <view class="shop-count">
+        <text>累计销量{{goodsDetailsContent.sales_volume}}</text>
+        <text style="margin-left:80px">库存{{goodsDetailsContent.goods_number}}</text>
+        <text style="margin-left:50px">{{goodsDetailsContent.basic_info.province_name}}</text>
+        <text style="margin-left:10px">{{goodsDetailsContent.basic_info.city_name}}</text>
+      </view>
+    </view>
+    <view style="margin-top: 10px;">
+      <view class="select" bindtap="showMask">
+        <text>已选:1个</text>
+        <text class="iconfont icon-more" style="float:right"></text>
+      </view>
+    </view>
+    <view class="mask" wx:if="{{showMask}}" bindtap="closeMask"></view>
+    <view class="screen-wrap" wx:if="{{showMask}}" animation="{{animationdata}}">
+      <view class="close" bindtap="closeMask">
+        <text class="iconfont icon-close"></text>
+      </view>
+      <view class="screen-content">
+        <view class="screen-goods">
+          <view class="goods-img">
+            <image src="{{goodsDetailsContent.goods_img}}"></image>
+          </view>
+          <view class="goods-title">
+            <view class="title">{{goodsDetailsContent.goods_name}}</view>
+            <view class="price">{{goodsDetailsContent.shop_price}}</view>
+          </view>
+        </view>
+        <view class="buy-warp">
+          <view class="buy-num">数量</view>
+          <view class="buy-add">
+            <text class="wenben" bindtap="changenum" data-num="0">-</text>
+            <view class="num">{{buynum}}</view>
+            <text class="wenben" bindtap="changenum" data-num="1">+</text>
+          </view>
+        </view>
+        <view class="buy">
+          <view class="buy-btn">立即购买</view>
+          <view class="buy-cart" bindtap="addCart">确定</view>
+        </view>
+      </view>
+    </view>
+    <view class="goods-details">
+      <template is="wxParse" data="{{wxParseData:article.nodes}}"></template>
+    </view>
+    <view class="guess">猜你喜欢</view>
+    <list listDatas="{{getGoodsGuess}}" />
+  </scroll-view>
+</view>
+<!-- 底部固定栏 -->
+<view class="footer-container">
+  <view class="footer-item">
+    <button class="kf" open-type="contact" session-from="{{goodsDetailsContent.goods_id}}"></button>
+    <view class="iconfont icon-kefu"></view>
+    <text>客服</text>
+  </view>
+  <view class="footer-item">
+    <view class="iconfont icon-shoucang"></view>
+    <text>收藏</text>
+  </view>
+  <view class="footer-item">
+    <view class="iconfont icon-gouwuche"></view>
+    <text>购物车</text>
+    <view class="buyNun">10</view>
+  </view>
+  <view class="footer-item addcart" bindtap="showMask">
+    <text>加入购物车</text>
+  </view>
+  <view class="footer-item buy">
+    <text>立即购买</text>
+  </view>
+</view>

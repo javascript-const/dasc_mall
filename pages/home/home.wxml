@@ -1,0 +1,101 @@
+<!-- <publictitle params="{{params}}"/> -->
+
+<scroll-view class="all" bindscrolltolower="loadmore" scroll-y="true" style="height:{{oH}}px">
+  <view class="nav" style="background-color:{{oColor}}">
+    <view class="input-content">
+      <icon type="search" class="search-icon"></icon>
+      <input type="text" placeholder="请输入关键字" />
+    </view>
+    <view>
+      <scroll-view class="move-nav" scroll-x="true">
+        <view class="nav-list">
+          <view wx:for="{{lists}}" wx:key="index" class="item {{itemIndex==index?'active':''}}" data-id="{{index}}"
+            bindtap="changeIndex">{{item}}</view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="banner">
+    <swiper class="swiper" indicator-dots="true" indicator-color="white" indicator-active-color="#000000"
+      interval="2000" autoplay="true" circular="true" bindchange="changeSwiper">
+      <swiper-item wx:for="{{swiperList}}" wx:key="index">
+        <image src="{{item}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="goods-list">
+    <swiper class="goods-item" indicator-dots="true">
+      <swiper-item class="item1" wx:for="{{navlist}}" wx:key="index" wx:for-item="list">
+        <view class="goods" wx:for="{{list}}" wx:key="index">
+          <image src="{{item.img}}"></image>
+          <view>{{item.desc}}</view>
+        </view>
+      </swiper-item>
+    </swiper>
+    <view class="new-list">
+      <view class="new-logo">
+        <image src="/images/newlogo.png"></image>
+      </view>
+      <swiper class="new-title" autoplay="true" vertical="true" circular="true" interval="3000">
+        <swiper-item class="new-item" wx:for="{{newslist}}" wx:key="index">
+          <view>{{item}}</view>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+  <view class="photo">
+    <view class="photo-title">
+      <image src="/images/photot.png"></image>
+    </view>
+  </view>
+  <view class="time-wrap">
+    <view class="time-content">
+      <view class="miaosha">
+        <view class="time-logo">
+          <image src="/images/time.png"></image>
+        </view>
+        <view class="timer">
+          距结束还剩:
+          <text class="timt-item"> {{hour>=10?hour:"0"+hour}}:</text>
+          <text class="timt-item"> {{minute>=10?minute:"0"+minute}}:</text>
+          <text class="timt-item"> {{second>=10?second:"0"+second}}</text>
+        </view>
+      </view>
+      <scroll scrollitem="{{scrollitem}}" />
+    </view>
+  </view>
+  <view class="team-wrap">
+    <pubscroll public="{{public}}" />
+  </view>
+  <view class="first">
+    <view class="first-wrap">
+      <view class="first-img">
+        <image src="/images/background01.jpeg"></image>
+      </view>
+      <publiclunbo publicItem="{{publicItem}}" />
+    </view>
+  </view>
+  <view class="first">
+    <view class="first-wrap">
+      <view class="first-img">
+        <image src="/images/background02.jpeg"></image>
+      </view>
+      <publiclunbo publicItem="{{publicItem2}}" />
+    </view>
+  </view>
+  <bigscroll big="{{big}}" />
+  <bigscroll big="{{big1}}" />
+  <!-- 店铺推荐 -->
+  <view class="store-wrap">
+    <view class="store-title">
+      <view class="store-head">店铺推荐</view>
+      <store store="{{store}}"/>
+      <view class="store-img">
+      <image src="/images/store01.png"></image>
+      <image src="/images/store02.png"></image>
+    </view>
+    </view>
+    
+  </view>
+  <list listDatas="{{listDatas}}" />
+</scroll-view>

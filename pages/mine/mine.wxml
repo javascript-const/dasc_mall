@@ -1,0 +1,8 @@
+<!--pages/mine/mine.wxml-->
+<view style="margin-top:200px">
+  <button bindtap="toLogin" wx:if="!showMask">请登录</button>
+</view>
+
+<view class="mask" hidden="{{showMask}}" >
+  <button style="margin-top:200px" open-type="getUserInfo"  bindgetuserinfo="getUserInfoFn" bindtap="closeMask">请授权</button>
+</view>

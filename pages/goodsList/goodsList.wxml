@@ -1,0 +1,40 @@
+<!-- pages/goodsList/goodsList.wxml -->
+<view class="input-content">
+  <icon type="search" class="search-icon"></icon>
+  <input type="text" placeholder="请输入关键字" />
+</view>
+
+<view class="head-nav">
+  <view wx:for="{{navlist}}" class="nav-item {{index==itemIndex?'active':''}}"  wx:key="index" data-id="{{index}}" bindtap="changeitem">
+    {{item}}
+  </view>
+</view>
+<view class="goodslist-wrap" style="height:{{oH-85}}px">
+  <view class="goods-container">
+    <scroll-view class="goods-scroll" scroll-y="true" bindscrolltolower="loadmore">
+      <view class="goods-content">
+        <view class="goods-item" wx:for="{{goodsListDatas}}" wx:key="index">
+          <navigator url="/pages/goodsDetail/goodsDetail?goods_id={{item.goods_id}}">
+          <view class="goods-img">
+            <image src="{{item.goods_img}}"></image>
+          </view>
+          <view class="item-title">{{item.goods_name}}</view>
+          <view class="item-price">${{item.market_price}}</view>
+          <view class="item-store">
+            <text class="store">进店</text>
+            <text class="buycount">{{item.sale}}人已购买</text>
+          </view>
+        </navigator>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+<!-- <block wx:for="{{goodsListDatas}}" wx:key="index">
+  <navigator url="/pages/goodsdetail/goodsdetail?goods_id={{item.goods_id}}">
+    <view>
+      <image src="{{item.goods_img}}"></image>
+      <view>{{item.goods_name}}</view>
+    </view>
+  </navigator>
+</block> -->

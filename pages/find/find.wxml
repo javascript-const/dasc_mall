@@ -1,0 +1,79 @@
+<!--pages/find/find.wxml-->
+<view class="find-header">
+  <view class="header-wrap">
+    <view class="header-item {{itemIndex==index?'active':''}}" wx:for="{{headList}}" wx:key="index" data-id="{{index}}" bindtap="changeIndex">{{item}}</view>
+
+  </view>
+</view>
+<view style="width:100%;height:44px"></view>
+<view class="find-wrap">
+  <swiper style="height:{{oH}}px" autoplay="{{false}}" current="{{itemIndex}}" bindchange="changeItem">
+    
+    <swiper-item>
+      <scroll-view scroll-y="true" style="height:{{oH}}px">
+        <view class="find-content">
+          <view class="item-wrap" wx:for="{{CommunityDatas}}" wx:key="index">
+            <view class="item-img">
+              <image src="{{item.img}}"></image>
+            </view>
+            <view class="item-title">
+              <view>{{item.goods_name}}</view>
+            </view>
+            <view class="count">
+              <view class="user-photo">
+                <image src="{{item.user_picture}}"></image>
+              </view>
+              <text>{{item.user_name}}</text>
+              <icon class="iconfont icon-find-liulan-alt color_ccc" style="font-size:12px;margin-left:10px;color:#ccc;"></icon>
+              <text>{{item.dis_browse_num}}</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      <scroll-view scroll-y="true" style="height:{{oH}}px">
+        <view class="find-content">
+          <view class="item-wrap" wx:for="{{CommunityDatas}}" wx:key="index">
+            <view class="item-img">
+              <image src="{{item.img}}"></image>
+            </view>
+            <view class="item-title">
+              <view>{{item.goods_name}}</view>
+            </view>
+            <view class="count">
+              <view class="user-photo">
+                <image src="{{item.user_picture}}"></image>
+              </view>
+              <text>{{item.user_name}}</text>
+              <icon class="iconfont icon-find-liulan-alt color_ccc" style="font-size:12px;margin-left:10px;color:#ccc;"></icon>
+              <text>{{item.dis_browse_num}}</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      <scroll-view scroll-y="true" style="height:{{oH}}px">
+        <view class="find-content">
+          <view class="item-wrap" wx:for="{{getStore}}" wx:key="index">
+            <view class="item-img">
+              <video src="{{item.goods_video}}"></video>
+            </view>
+            <view class="item-title">
+              <view>{{item.goods_name}}</view>
+            </view>
+            <view class="count">
+              <view class="user-photo">
+                <image src="{{item.logo_thumb}}"></image>
+              </view>
+              <text>{{item.shop_name}}</text>
+              <icon class="iconfont icon-find-liulan-alt color_ccc" style="font-size:12px;margin-left:10px;color:#ccc;"></icon>
+              <text>{{item.look_num}}</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>

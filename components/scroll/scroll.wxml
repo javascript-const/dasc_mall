@@ -1,0 +1,25 @@
+<!--components/scroll/scroll.wxml-->
+<view class="miaosha-time">
+  <view class="miaosha-item" wx:for="{{scrollitem.scrolltime}}" wx:key="index" bindtap="change">
+    <view class="time-item">
+     {{item.title}}
+    </view>
+    <view class="miaosha-title">
+      1111111
+    </view>
+  </view>
+</view>
+<view class="scroll-wrap">
+  <scroll-view class="scroll-list" scroll-x="true">
+   <view class="scroll-content" style="width:{{scrollitem.length*114}}px">
+    <view class="scroll-item" wx:for="{{scrollitem.scrollDatas}}" wx:key="index">
+      <view class="item-img">
+        <image src="{{item.goods_thumb}}"></image>
+      </view>
+      <view class="item-title">{{item.goods_name}}</view>
+      <view>{{item.sec_price}}</view>
+      <view>{{item.market_price_formated}}</view>
+    </view>
+   </view>
+  </scroll-view>
+</view>
